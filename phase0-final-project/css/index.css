@@ -1,0 +1,217 @@
+@import url(https://fonts.googleapis.com/css?family=IBM+Plex+Mono:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=Protest+Guerrilla:regular);
+@import url(https://fonts.googleapis.com/css?family=Cormorant:300,regular,500,600,700,300italic,italic,500italic,600italic,700italic);
+
+.header {
+  font-size: 80px;
+  color: #4520ab;
+  text-align: center;
+  font-family: Protest Guerrilla;
+  margin-top: 20px;
+}
+
+.ruWord,
+.enWord,
+.index {
+  font-size: 20px;
+  font-family: Cormorant;
+  font-weight: 600;
+}
+
+.left {
+  background-color: #f0f0f0;
+  height: 40px;
+
+  border-radius: 5px 0 0 5px;
+}
+
+.right {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(199, 194, 194);
+  height: 40px;
+  border-left: 3px solid black;
+  border-radius: 0 3px 3px 0;
+}
+
+.del {
+  position: relative;
+  content: var(--icon, url(../icons/del.svg));
+  right: 8px;
+  height: 20px;
+  top: 12px;
+}
+
+.miniBox,
+.downButton,
+.inputButton {
+  display: flex;
+  justify-content: center;
+}
+
+.miniBox {
+  border-bottom: 1px solid black;
+  border-radius: 2px;
+}
+.box {
+  border-radius: 6px 6px 6px 6px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  width: 534px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  border-right: 4px solid black;
+  border-left: 4px solid black;
+  position: relative;
+}
+
+.button {
+  position: relative;
+  left: -160px;
+  height: 40px;
+  width: 150px;
+  margin-top: 62px;
+  margin-bottom: 40px;
+  border-radius: 8px;
+  background-color: black;
+  color: aliceblue;
+  font-family: IBM Plex Mono;
+  font-size: 15px;
+}
+
+#input {
+  margin-left: 140px;
+  width: 534px;
+  height: 46px;
+  border-radius: 8px;
+  padding-left: 5px;
+  margin-top: 56px;
+  font-family: IBM Plex Mono;
+  font-size: 16px;
+}
+
+.enWord {
+  padding-top: 10px;
+  margin-left: 20px;
+  width: 220px;
+  align-items: center;
+}
+.ruWord {
+  padding-top: 10px;
+  margin-right: 20px;
+  width: 252px;
+  position: relative;
+}
+.index {
+  padding-top: 5px;
+  margin-right: 5px;
+  padding-left: 5px;
+}
+.downButton {
+  text-align: center;
+  margin-top: 60px;
+}
+.allDel {
+  background-color: #adadad;
+  font-size: 14px;
+  font-weight: 500;
+  justify-content: center;
+  width: 130px;
+  border-radius: 8px;
+  height: 25px;
+  font-family: IBM Plex Mono;
+}
+.delAll {
+  position: relative;
+  content: var(--icon, url(../icons/del.svg));
+  top: 4px;
+  right: 5px;
+}
+
+.clue2 {
+  background-color: #f0f0f0;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding-left: 4px;
+  padding-right: 4px;
+  position: relative;
+  bottom: 43px;
+  right: 10px;
+  text-align: center;
+  word-break: break-all;
+}
+.clue {
+  background-color: rgb(199, 194, 194);
+  border: 1px solid black;
+  border-radius: 5px;
+  padding-left: 4px;
+  padding-right: 4px;
+  position: relative;
+  bottom: 43px;
+  left: 8px;
+  text-align: center;
+  word-break: break-all;
+}
+
+@media (min-width: 300px) and (max-width: 799px) {
+  .header {
+    max-width: auto;
+    font-size: 60px;
+    color: #4520ab;
+    text-align: center;
+    font-family: Protest Guerrilla;
+    margin-top: 20px;
+  }
+
+  .button {
+    position: relative;
+    left: -95px;
+    height: 40px;
+    width: 90px;
+    margin-top: 62px;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    background-color: black;
+    color: aliceblue;
+    font-family: IBM Plex Mono;
+    font-size: 14px;
+    text-align: center;
+    
+  }
+
+  #input {
+    margin-left: 100px;
+    width: 300px;
+    height: 46px;
+    border-radius: 8px;
+    padding-left: 5px;
+    margin-top: 56px;
+    font-family: IBM Plex Mono;
+    font-size: 10px;
+  }
+  .box {
+    border-radius: 6px 6px 6px 6px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 300px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-right: 4px solid black;
+    border-left: 4px solid black;
+    position: relative;
+  }
+  .enWord {
+    padding-top: 10px;
+    margin-left: 20px;
+    width: 120px;
+    align-items: center;
+  }
+  .ruWord {
+    padding-top: 10px;
+    margin-right: 20px;
+    width: 120px;
+    position: relative;
+  }
+}
